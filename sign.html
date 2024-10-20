@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <script src="https://kit.fontawesome.com/9928432ef2.js" crossorigin="anonymous"></script>   
+    <style>    
+    *{   margin: 0;
+            padding: 0;
+            font-family: 'poppins',sans-serif;
+            box-sizing: border-box;
+        }
+        .container{
+            width: 100%;
+            height: 100vh;
+            background-image: linear-gradient(rgba(0,0,50,0.8),rgba(0,0,50,0.8)),url(background.png);
+            background-position: center;
+            background-size: cover;
+            position: relative;
+        }
+        .form-box{
+            width:90% ;
+            max-width: 450px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            background: #fff;
+            padding: 50px 60px 70px;
+            text-align: center;
+        }
+        .form-box h1{
+            font-size: 30px;
+            margin-bottom: 60px;
+            color: #3c00a0;
+            position: relative;
+        }
+        .form-box h1::after{
+            content:'';
+            width: 30px;
+            height: 4px;
+            border-radius: 4px;
+            background: #3c00a0;
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translate(-50%);
+        }
+        .input-field{
+             background: #eaeaea;
+             margin: 15px 0;
+             border-radius: 3px;
+             display: flex;
+             align-items: center;
+        }
+        input{
+            width: 100%;
+            background: transparent;
+            border: 0;
+            outline: 0;
+            padding: 18px 15px;
+           
+        }
+        .input-field i{
+            margin-left: 15px ; 
+            color: #999;
+
+        }
+        form p{
+            text-align: center;
+            font-size: 13px;
+            /* margin-bottom: 20px; */
+        }
+        form p a{
+            text-decoration: none;
+            color: #3c00a0;
+        }
+        .btn-field{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;   
+        }
+       .btn-field button:hover{
+            background: black;
+        }
+        .btn-field button{
+            flex-basis: 48%;
+            background: #3c00a0;
+            color: #fff;
+            height: 40px;
+            border-radius: 20px;
+            border: 0;
+            outline: 0;
+            cursor: pointer;
+            transition: background 1s;
+        }
+        .input-group{
+            height: 280px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+       <div class="form-box">
+        <h1>Sign Up</h1>
+        <form >
+            <div class="input-group">
+                <div class="input-field" id="">
+                    <i class="fa-solid fa-user"></i> 
+                    <input type="text" placeholder="Enter Your Name" id="">
+                </div>
+                <div class="input-field">
+                    <i class="fa-solid fa-envelope"></i> 
+                    <input type="email" placeholder="Enter Your Emal" id="">
+                </div>
+                <div class="input-field">
+                    <i class="fa-solid fa-lock"></i>
+                    <input type="password" placeholder="Enter Your Password" id="">
+                </div>
+                <p>Lost Password <a href="#">Click Here!</a></p>
+            </div>
+            <div class="btn-field">
+                <button type="button" id="signupbtn">Sign Up</button>
+                <button type="button" id="signinbtn">Sign In</button>
+            </div>
+        </form>
+       </div>
+    </div>
+</body>
+</html>
